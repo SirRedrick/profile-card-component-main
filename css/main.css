@@ -1,20 +1,114 @@
+@font-face {
+  font-family: 'Kumbh Sans';
+  src: url(../fonts/Kumbh_Sans/KumbhSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kumbh Sans';
+  src: url(../fonts/Kumbh_Sans/KumbhSans-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
+  width: 100vw;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .card {
   width: 350px;
   height: 375px;
+  padding-top: 140px;
+  border-radius: 15px;
   -webkit-box-shadow: 0px 0px 50px #ccc;
           box-shadow: 0px 0px 50px #ccc;
+  background: #19a2ae;
+}
+
+.container .card .card-body {
+  height: 100%;
+  background: #fff;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+}
+
+.container .card .card-body .secondary {
+  color: #969696;
+}
+
+.container .card .card-body .user-avatar {
+  border-radius: 50%;
+  border: solid 5px #fff;
+  position: absolute;
+  left: calc(50% - 58px);
+  top: -53px;
+}
+
+.container .card .card-body .card-hero {
+  height: 145px;
+  text-align: center;
+  padding-top: 75px;
+}
+
+.container .card .card-body .card-hero .main {
+  padding-bottom: 10px;
+}
+
+.container .card .card-body .card-hero .main .secondary {
+  font-size: 1rem;
+}
+
+.container .card .card-body .card-hero .secondary {
+  font-size: 0.75rem;
+}
+
+.container .card .card-body .card-bottom {
+  height: 90px;
+  text-align: center;
+  border-top: solid 1px #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .card .card-body .card-bottom .card-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+}
+
+.container .card .card-body .card-bottom .card-item .main {
+  padding-bottom: 5px;
+}
+
+.container .card .card-body .card-bottom .card-item .secondary {
+  font-size: 0.5rem;
 }
 
 .attribution {

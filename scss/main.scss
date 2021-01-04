@@ -1,0 +1,28 @@
+// Variables
+$primary-dark-cyan: hsl(185, 75%, 39%);
+$primary-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$primary-dark-grayish-blue: hsl(227, 10%, 46%);
+
+$neutral-dark-gray: hsl(0, 0%, 59%);
+
+.container {
+	display: flex;
+	width: max-content;
+	height: max-content;
+
+	// Card dimensions: desktop - 350x375, mobile - 325x375
+	.card {
+		width: 350px;
+		height: 375px;
+
+		box-shadow: 0px 0px 50px #ccc;
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}

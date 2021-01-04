@@ -119,4 +119,10 @@
 .attribution a {
   color: #3e52a3;
 }
+
+@media (max-width: 375px) {
+  .container .card {
+    width: 325px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
